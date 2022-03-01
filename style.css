@@ -1,0 +1,43 @@
+/* styling for the game interface */
+body{
+    background-color: #000000 ;
+    padding: 20px;
+}
+h1{
+    color: burlywood;
+    display: flex;
+    justify-content: center;
+}
+
+#game-container{
+    background-color: #FCA311;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.card-spread{
+    height: 20vh;
+    flex: 1;
+    padding: 20px;
+    /* opacity: .2; */
+    
+}
+/* #card-spread li{
+    display: grid;
+    justify-content: flex-start;
+}
+#card-spread img{
+    height: 20vh;
+} */
+
+/* styling for the nav */
+#main-nav{
+    display: flex;
+    justify-content: center;
+    background-color: #14213D;
+}
+#button-control-list li {
+    display: inline;
+}
