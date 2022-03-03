@@ -1,6 +1,12 @@
-// let cards = document.getElementsByClassName("card-spread")
-// function cardOpacity(){
-//     let cards = document.getElementsByClassName("card-spread");
-//     cards.style.opacity = 0
-// }
-// cardOpacity()
+// forming an array to hold all images
+let card = document.getElementsByClassName('card-spread')
+let cards = [...card]
+
+//adding on click event listener
+function clickCards(){
+    for (let i = 0; i < cards.length; i++){
+        cards[i].addEventListener('click', function(){
+            
+        })
+    }
+}
