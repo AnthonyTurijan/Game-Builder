@@ -1,4 +1,4 @@
-/* styling for the game interface */
+/* //styling for the game interface */
 body{
     background-color: #000000 ;
     width: 100%;
@@ -20,40 +20,11 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     border-radius: 30px;
     
 }
-.card-deck{
-    /* min-height: 100vh; */
-    display: flex;
-    flex-wrap: wrap;
-    width: 85%;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    margin: 0 0 3em;
 
-}
-.card-deck li{
-    list-style: none;
-    height: 11rem;
-    /* width: 12rem; */
-    border-radius: 5px;
-   
-}
-.card-spread{
-    height: 10rem;
-    /* width: 10rem; */
-    margin: 0 67px;
-    padding: 20px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    /* border-radius: 50px; */
-    
-}
 
 /* styling for the nav */
 #main-nav{
