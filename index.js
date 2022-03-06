@@ -2,9 +2,11 @@
 document.addEventListener('DOMContentLoaded', function(){
     const cards = document.getElementsByClassName('game-card');
     for(let i=0; i <cards.length; i++){
+        // function to add Click Event Listener
         cards[i].addEventListener("click", flipCard);
     }
     for(let i=0; i <cards.length; i++){
+        // function to shuffle cards
         let randomPosition = Math.floor(Math.random()* 12);
         cards[i].style.order = randomPosition
     }
@@ -57,7 +59,7 @@ function unflipCards(){
                 firstCard.classList.remove('flip');
                 secondCard.classList.remove('flip');
                 resetBoard();
-            }, 1500)
+            }, 500)
 }
 // function to reset board
 function resetBoard(){
@@ -65,5 +67,3 @@ function resetBoard(){
     [firstCard, secondCard] = [null, null]
 }
 
-// function to shuffle cards
-// function shuffle()

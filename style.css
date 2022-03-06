@@ -19,8 +19,8 @@ h1{
 
 .game-container{
     background-color: #FCA311;
-    height: 85vh;
-    width: 85vw;
+    height: 90vh;
+    width: 55vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
