@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Flipper: The Game</title>
-    <script src= "index.js"></script>
+    <title>Fruit Picker: The Game</title>
+    <!-- <script src= "index.js"></script>
+    <script src= "timer.js"></script> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <header>
-            <h1>Card Flipper: The Game</h1>
+            <h1>Fruit Picker: The Game</h1>
         </header>
+        <div class="content-container">
+            <article class="side-containers">
+                <section class="timer-container">
+                    <p> Timer</p>
+                    <p class="timer"></p>
+                </section>
+                <section id="moves-container">
+                    <p>moves</p>
+                    <p><a id="moves">0</a></p>
+                </section>
+            </article>
        <section class="game-container">
            <div class="game-card" data-framework="blueberries">
                <img class="front-card" src="assets/pictures/blueberries.png" alt="Blueberry Image">
@@ -78,7 +90,11 @@
                 <img class="front-card" src='assets/pictures/durian.png'alt="Durian Image">
                 <img class="back-card"src="assets/pictures/card-back.png" alt="Fruit Picker Logo">
            </div>
-       </section>
+        </section>
+        <article class="side-containers">
+            <p> Timer</p>
+        </article>
+        </div>
         <nav id='main-nav'>
             <ul id='button-control-list'>
                 <li><button>Instructions</button></li>
@@ -88,5 +104,7 @@
             </ul>
         </nav>
     </main>
+    <script src= "index.js"></script>
+    <script src= "timer.js"></script>
 </body>
 </html>

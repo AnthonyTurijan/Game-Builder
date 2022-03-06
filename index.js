@@ -31,6 +31,7 @@ function flipCard(){
         secondCard = this;
         
         matchCheck();
+        moveCounter();
     
 }
 //function to check if card dataset matches
@@ -66,4 +67,14 @@ function resetBoard(){
     [hasFlippedCard, lockedBoard] = [false, false];
     [firstCard, secondCard] = [null, null]
 }
+// //moves counter variables
+// let moves = 0
+// let counter = document.getElementById('moves')
+// console.log(moves)
+// console.log(counter)
+// //function for move counter
+// function moveCounter(){
+//     moves++;
+//     counter.innerHTML = moves
+// }
 
