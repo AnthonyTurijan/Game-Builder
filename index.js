@@ -20,19 +20,29 @@ function flipCard(){
         hasFlippedCard = false;
         secondCard = this;
         
-        //do cards match?
+        matchCheck();
+    }
+}
+//function to check if card dataset matches
+function matchCheck(){
+    //do cards match?
         if (firstCard.dataset.framework === secondCard.dataset.framework){
             // its a match
-            firstCard.removeEventListener('click',flipCard);
-            secondCard.removeEventListener('click',flipCard)
+           disableFlip();
         } else {
                 // not a match
-                setTimeout(() => {
+                unflipCards();
+        }
+}
+// function for enabling flip status
+function disableFlip(){
+     firstCard.removeEventListener('click',flipCard);
+            secondCard.removeEventListener('click',flipCard)
+}
+
+function unflipCards(){
+    setTimeout(() => {
                 firstCard.classList.remove('flip')
                 secondCard.classList.remove('flip')
             }, 1500)
-        }
-    }
 }
-// declaring flipped card status
-
