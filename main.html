@@ -18,7 +18,7 @@
             <article class="side-containers">
                 <section class="timer-container">
                     <p> Timer</p>
-                    <p class="timer"></p>
+                    <p><a class="timer">0 mins 0 secs</a></p>
                 </section>
                 <section id="moves-container">
                     <p>moves</p>
@@ -100,9 +100,15 @@
                 <li><button>Instructions</button></li>
                 <li><button>Start</button></li>
                 <li><button>Restart</button></li>
-                <li><button>Hard Mode</button></li>
+                <li><button id="btn">Modal</button></li>
             </ul>
         </nav>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Victory</p>
+            </div>
+        </div>
     </main>
     <script src= "index.js"></script>
     <script src= "timer.js"></script>
