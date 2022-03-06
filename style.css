@@ -17,14 +17,14 @@ h1{
     justify-content: center;
 }
 
-#game-container{
+.game-container{
     background-color: #FCA311;
     height: 85vh;
     width: 85vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    
+    perspective: 1000px;
     
 }
 .game-card{
@@ -33,12 +33,17 @@ h1{
     margin: 5px;
     position: relative;
     transform: scale(1);
-    
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 /* styling for card interaction */
 .game-card:active{
     transform: scale(.97);
     transition: transform .2s;
+}
+
+.game-card.flip{
+    transform: rotateY(180deg);
 }
 
 .front-card,
@@ -49,6 +54,11 @@ h1{
     align-content: center;
     padding: 20px;
     border-radius: 5px;
+    backface-visibility: hidden;
+}
+.front-card{
+    transform: rotateY(180deg
+    );
 }
 
 
