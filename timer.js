@@ -42,9 +42,6 @@ function startTimer(){
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('btn')
 var span = document.getElementsByClassName('close')[0];
-console.log(modal)
-console.log(btn)
-console.log(span)
 btn.onclick = function(){
     modal.style.display = 'block'
 }
@@ -54,5 +51,15 @@ span.onclick = function(){
 window.onclick = function(event){
     if (event.target == modal){
         modal.style.display = 'none';
+    }
+}
+let matchedCards = document.getElementsByClassName("game-card flip")
+function victoryScreen(){
+    if (matchedCards.length === 16){
+        clearInterval(interval);
+        finalTime = timer.innerHTML;
+        modal.style.display = 'block';
+        document.getElementById('finalMove').innerHTML = moves;
+        document.getElementById('totalTime').innerHTML = finalTime
     }
 }

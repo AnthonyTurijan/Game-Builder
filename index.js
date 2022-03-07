@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     for(let i=0; i <cards.length; i++){
         // function to add Click Event Listener
         cards[i].addEventListener("click", flipCard);
+        cards[i].addEventListener('click', victoryScreen)
     }
     for(let i=0; i <cards.length; i++){
         // function to shuffle cards
