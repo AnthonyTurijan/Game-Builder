@@ -67,3 +67,17 @@ function victoryScreen(){
     }
 }
 
+function resetGame(){
+    shuffle();
+    //reset moves
+    moves = 0;
+    counter.innerHTML = moves;
+    //reset timer
+    second = 0;
+    minute = 0;
+    hour = 0;
+    var timer = document.querySelector('.timer');
+    timer.innerHTML = '0 mins 0 secs';
+    clearInterval(interval);
+    console.log('hello')
+}
