@@ -38,6 +38,9 @@ function startTimer(){
     }, 1000);
 }
 
+//restart button
+
+
 //function for win screen
 var modal = document.getElementById('myModal');
 var btn = document.getElementById('btn')
@@ -63,3 +66,4 @@ function victoryScreen(){
         document.getElementById('totalTime').innerHTML = finalTime
     }
 }
+

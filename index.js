@@ -1,21 +1,40 @@
 // creating an object to hold an array of cards
-document.addEventListener('DOMContentLoaded', function(){
+window.onload = startGame()
+//function that creates an array of cards/shuffles/adds clicks
+function startGame(){
+    document.addEventListener('DOMContentLoaded', function(){
+    addClick();
+    shuffle();
+})
+}
+let hasFlippedCard = false;
+let lockedBoard = false;
+let firstCard, secondCard;
+
+//function to add Event Listeners
+
+function addClick(){
     const cards = document.getElementsByClassName('game-card');
     for(let i=0; i <cards.length; i++){
         // function to add Click Event Listener
         cards[i].addEventListener("click", flipCard);
         cards[i].addEventListener('click', victoryScreen)
     }
+}
+
+//function to Shuffle
+
+function shuffle(){
+    const cards = document.getElementsByClassName('game-card');
     for(let i=0; i <cards.length; i++){
         // function to shuffle cards
         let randomPosition = Math.floor(Math.random()* 12);
         cards[i].style.order = randomPosition
     }
-})
-let hasFlippedCard = false;
-let lockedBoard = false;
-let firstCard, secondCard;
+}
+
 //Function to flip card
+
 function flipCard(){
     if (lockedBoard) return;
     if (this === firstCard) return;
