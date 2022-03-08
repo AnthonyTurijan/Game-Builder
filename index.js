@@ -101,3 +101,9 @@ function resetBoard(){
     [firstCard, secondCard] = [null, null]
 }
 
+function removeClass(){
+    const cards = document.getElementsByClassName('game-card');
+    for(let i=0; i <cards.length; i++){
+        cards[i].classList.remove('flip')
+    }
+}

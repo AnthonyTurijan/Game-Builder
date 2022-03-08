@@ -12,18 +12,11 @@
 <body>
     <main>
         <header>
-            <h1>Fruit Picker: The Game</h1>
+    
         </header>
         <div class="content-container">
             <article class="side-containers">
-                <section class="timer-container">
-                   <h2 class="side-bar-title">Timer</h2>
-                    <p><a class="timer">0 mins 0 secs</a></p>
-                </section>
-                <section id="moves-container">
-                    <h2 class="side-bar-title">Moves</h2>
-                    <p><a id="moves">0</a></p>
-                </section>
+                <h1>Fruit Picker: The Game</h1>
             </article>
        <section class="game-container">
            <div class="game-card" data-framework="blueberries">
@@ -92,13 +85,20 @@
            </div>
         </section>
         <article class="side-containers">
-            <p> Timer</p>
+            <section class="timer-container">
+               <h2 class="side-bar-title">Timer</h2>
+                <p><a class="timer">0 mins 0 secs</a></p>
+            </section>
+            <section id="moves-container">
+                <h2 class="side-bar-title">Moves</h2>
+                <p><a id="moves">0</a></p>
+            </section>
         </article>
         </div>
         <nav id='main-nav'>
             <ul id='button-control-list'>
                 <li><button>Instructions</button></li>
-                <li><button>Start</button></li>
+                <!-- <li><button>Start</button></li> -->
                 <li><button id="restart" onclick="resetGame()">Restart</button></li>
                 <li><button id="btn">Modal</button></li>
             </ul>
@@ -109,6 +109,7 @@
                 <p>Victory</p>
                 <p>You made <span id=finalMove> </span> moves </p>
                 <p>in <span id=totalTime> </span> </p>
+                <button class="replay" onclick="modalReplay()">Play Again!</button>
             </div>
         </div>
     </main>

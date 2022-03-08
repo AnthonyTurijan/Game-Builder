@@ -68,6 +68,7 @@ function victoryScreen(){
 }
 
 function resetGame(){
+    removeClass();
     shuffle();
     //reset moves
     moves = 0;
@@ -79,5 +80,12 @@ function resetGame(){
     var timer = document.querySelector('.timer');
     timer.innerHTML = '0 mins 0 secs';
     clearInterval(interval);
-    console.log('hello')
+    console.log('hello');
+
+}
+
+function modalReplay(){
+    resetGame();
+    modal.style.display = 'none';
+
 }
